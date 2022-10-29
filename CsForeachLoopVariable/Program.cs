@@ -1,7 +1,8 @@
 ﻿var attributes = typeof(MyClass).GetCustomAttributes(typeof(FirstAttribute), false);
 
-foreach (SecondAttribute attribute in attributes)
+foreach (var attribute in attributes)
 {
+    SecondAttribute secondAttribute = (SecondAttribute)attribute;
     //...
 }
 
