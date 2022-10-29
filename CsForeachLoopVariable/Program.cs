@@ -2,7 +2,7 @@
 
 var attributes = typeof(MyClass).GetCustomAttributes<FirstAttribute>(false);
 
-foreach (SecondAttribute attribute in attributes)
+foreach (var attribute in attributes)
 {
     //...
 }
